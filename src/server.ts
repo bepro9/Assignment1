@@ -2,7 +2,7 @@ import express, { application } from "express";
 import router from "./routes";
 
 const app = express();
-const port: number = 3000;
+const port: number = Number(process.env.PORT) || 3000;
 
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
