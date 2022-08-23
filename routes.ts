@@ -11,9 +11,9 @@ import {
 
 const router = Router();
 
-router.get('/hc', (req: Request, res: Response) => {
+router.get("/hc", (req: Request, res: Response) => {
   res.status(200).send("Health Check Route...");
-}
+});
 router.get("/all-books", getAllBooks);
 router.get("/all-magazines", getAllMagazines);
 
